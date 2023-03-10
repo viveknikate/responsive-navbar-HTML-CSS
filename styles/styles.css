@@ -66,10 +66,9 @@ a.active, a:hover{
 .content{
      padding: 20px;
      height: 100vh;
-     background: greenyellow;
 }
 
-h1{
+body>h1{
      text-align: center;
      line-height: 50px;
 }
@@ -134,4 +133,5 @@ h1{
 /* here the content of page stop shrinking when we hit to the minimum widh of 350px */
 body{
      min-width: 350px;
+     background: rgb(185, 224, 126);
 }
