@@ -1,0 +1,137 @@
+*{
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style-type: none;
+}
+
+nav{
+     background: black;
+     height: 80px;
+}
+
+label.logo{
+     font: bold 1.5rem cursive;
+     color: white;
+     padding: 0 20px;
+}
+
+nav{
+     line-height: 80px;
+}
+
+nav ul{
+     float: right;
+     margin: 0 30px;
+}
+
+nav ul li{
+     display: inline-block;
+     margin-left: 40px;
+     
+}
+
+nav ul li a{
+     color: white;
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     padding: 3px 8px;
+     border-radius: 5px;
+}
+
+label i{
+     color: white;
+}
+
+label.bar{
+     font-size: 35px;
+     float: right;
+}
+
+label.bar i{
+     margin: 0 20px;
+     color: rgb(220, 151, 4);
+     display: none;
+     
+}
+
+a.active, a:hover{
+     background: rgb(220, 151, 4);
+}
+
+#check{
+     display: none;
+}
+
+.content{
+     padding: 20px;
+     height: 100vh;
+     background: greenyellow;
+}
+
+h1{
+     text-align: center;
+     line-height: 50px;
+}
+
+@media (min-width:700px) and (max-width:1000px){
+     label.logo{
+          display: block;
+          font:bold 40px cursive;
+          color: rgb(234, 162, 18);
+          text-align: center;
+     }
+     nav{
+          height: 120px;
+     }
+
+     nav ul{
+          width: 100%;
+          text-align: center;
+     }
+}
+
+@media (max-width:699px){
+
+     label.logo{
+          font-size: 40px;
+          color: rgb(234, 162, 18);
+          text-align: center;
+     }
+
+     nav{
+          text-align: center;
+     }
+
+     label.bar i{
+          display: block;
+          line-height: 80px;
+     }
+
+     nav ul{
+          position: fixed;
+          background: rgb(73, 77, 72);
+          height: 100vh;
+          width: 100%;
+          right: -108%;
+     }
+
+     nav ul li{
+          display: block;
+          text-align: center;
+     }
+
+     a.active, a:hover{
+          background: none;
+          color: rgb(234, 162, 18);
+     }
+
+     #check:checked ~ ul{
+          right: -30px;
+     }
+}
+
+/* here the content of page stop shrinking when we hit to the minimum widh of 350px */
+body{
+     min-width: 350px;
+}
